@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+        <meta charset="UTF-8"/>
+        <link rel="icon" href="img/apple-icon-60x60.png"/>
+        <link rel="stylesheet" href="./css/style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"/>
+
+        <title>EVERDEX</title>
+  </head>
+  <body>
+      
+    <div class="banner">
+      <figure class="logo">
+        <img src="img/Logo.png" alt="Logo" >
+            </figure>
+    </div>
+      
+    <header class="containerHead">
+      <nav class="menu">
+        <a href="./index.html">DEFAULT DEX</a>
+        <a href="./shinyDex.html">SHINY DEX</a>
+        <a href="./competitive.html">COMPETITIVE</a>  
+        <a href="./battle.html">BATTLE</a>
+        <a href="./quiz.html">QUIZ</a>
+        <a href="apk/EVERSETS.apk">ANDROID DOWNLOAD</a>
+        <a href="https://discord.gg/GAemG8a">DISCORD</a>  
+        <a href="./findme.html">FIND ME</a>
+      </nav>
+    </header>
+    
+    <button id="btnScrollToTop" src>
+      <i class="fas fa-arrow-up"></i>
+    </button>
+      
+    <section class="main-container">
+      <article class="article">
+        <ul id="pokedex"></ul>
+      </article> 
+    </section>
+
+  <script src="./javascript/script.js"></script>
+  <script>
+    const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+    btnScrollToTop.addEventListener("click", function(){
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./css/style.css">
+        <title>EVERDEX</title>
+        <link rel="icon" type="image/png" href="img/ic_launcher-web.png"/>  
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+      
+      <div class="banner">
+        <figure class="logo">
+            <img src="img/Logo.png" alt="Logo">
+        </figure>
+      </div>
+      
+      <header class="containerHead">
+        <nav class="menu">
+          <a href="./index.html">DEFAULT DEX</a>
+          <a href="./shinyDex.html">SHINY DEX</a>
+          <a href="./competitive.html">COMPETITIVE</a>  
+          <a href="./battle.html">BATTLE</a>
+          <a href="./quiz.html">QUIZ</a>
+          <a href="apk/EVERSETS.apk">ANDROID DOWNLOAD</a>
+          <a href="https://discord.gg/GAemG8a">DISCORD</a>  
+          <a href="./findme.html">FIND ME</a>
+        </nav>
+      </header>
+      
+      <div class="pokemon-list" id="listPokemon">
+        <div class="pokemon" id="pokemon-1">
+            <img src="" alt="">
+            <p></p>
+        </div>
+
+        <div class="vs">VS</div>
+
+        <div class="pokemon" id="pokemon-2">
+            <img src="" alt="">
+            <p></p>
+        </div>
+
+      </div>
+
+      <div class="buttonBattle">
+          <button class="buttonB" onclick="selectWinner(), TimeRand()">FIGHT!</button>
+        </div>
+
+  <script src="./javascript/battle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+  </body>
+</html>

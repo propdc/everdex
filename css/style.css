@@ -1,0 +1,371 @@
+body {
+  background-color: #991816;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: rubik;
+}
+
+.banner {
+  width: 100%;
+  padding: 3rem 3rem;
+  text-align: center;
+  background-color: rgba(0,0,0,.3);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.banner h1 {
+  color: #f1f1f1;
+}
+
+.containerHead {
+  width: 100%;
+  height: 80px;
+  background: #222222;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 2px;
+  box-sizing: border-box;
+  position: sticky;
+  box-shadow: 0px 5px #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav a{
+color:white;
+display: inline-block;
+padding: 5px 13px;
+line-height: 1;
+text-decoration: none;
+border-radius: 3px;
+}
+
+.logo {
+  width: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.logo img {
+  width: 25%;
+  min-width: 300px;
+}
+
+.item-options {
+  color: #f1f1f1;
+  margin: 0 1.5rem;
+  text-decoration: none;
+}
+
+.main-container {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article {
+  width: 98%;
+}
+
+.containerHead nav a:hover{
+  background: rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 54px; 
+  transition: all 0.3s ease;
+  text-shadow: 5px 5px 1px #222222;
+}
+
+#pokedex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+  padding-inline-start: 0;
+}
+
+.pokemon-list{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 100px 1fr;
+  max-width: 800px;
+  margin: auto;
+}
+
+.pokemon{
+  margin-top: 60px;
+  padding: 40px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 40px;
+  color: #222;
+  box-shadow: 10px 10px;
+  text-transform: uppercase;
+}
+
+.pokemon img{
+  width: 100%;
+}
+
+.buttonBattle button{
+  background-color: #fff;
+  border: none;
+  color: #222;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 7px 7px;
+  font-family: rubik;
+  cursor: pointer;
+
+}
+
+.formulario{
+  float: right;
+}
+
+.buttonBattle button:hover{
+  background-color: grey;
+  color: #fff;
+  box-shadow: 7px 7px #222;
+}
+
+.vs {
+  text-align: center;
+  margin: auto;
+  font-size: 40px;
+  text-shadow: 3px 3px 1px #222222;
+}
+
+.card{
+  position: relative;
+  list-style: none;
+  padding: 40px;
+  background-color: #ffffff;
+  color: #222;
+  text-align: center;
+  border-radius: 60px;
+  box-shadow: 10px 10px;
+}
+
+.card-title {
+  text-transform: capitalize;
+  margin-bottom: 0px;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.card-subtitle {
+  margin-top:1px;
+  color: #666;
+  font-weight: lighter;
+}
+
+.card-image {
+  height: 180px;
+}
+
+.card:hover .imgBx img {
+  opacity: 0;
+}
+
+.card .content {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  width: 80%;
+  height: 40px;
+  background: #fff;
+  transition: 0.5s;
+  overflow: hidden;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.card:hover .content {
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 60px;
+}
+
+.card .content h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.card .content p {
+margin-top:30px;
+margin-left:40px;
+padding: 0;
+opacity: 0;
+line-height: 1.2em;
+transition: 0.5s;
+text-align: justify;
+}
+
+.card:hover .content p {
+opacity: 1;
+transition-delay: 0.5s;
+}
+
+.cardd:hover {
+  box-shadow: 10px 10px #a9a9a9;
+}
+
+#btnScrollToTop{
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: #222;
+  box-shadow: 5px 5px #222;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#btnScrollToTop:active{
+  background: rgb(61, 61, 61);
+  z-index: 1;
+}
+
+#btnScrollToTop i{
+  width: 100px;
+  font-size: 50px;
+}
+
+.box{
+  width: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 80px;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  color: white;
+  border-radius: 60px;
+}
+
+.box-img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  box-shadow: 5px 5px #fff;
+}
+
+.box h5{
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+.box p{
+  text-align: justify;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.box li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+
+.box li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+
+.box li a:hover{
+  color: #b9b9b9;
+}
+
+.grid {
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 10px 50px 50px 50px;
+  border-radius: 50px;
+  border: 1px solid black;
+  box-shadow: 15px 15px #222222;
+}
+
+.grid h1 {
+  background-color: #222222;
+  font-size: 60px;
+  text-align: center;
+  color: #ffffff;
+  padding: 2px 0px;
+  border-radius: 50px;
+}
+
+#score {
+  color: #222222;
+  text-align: center;
+  font-size: 30px;
+}
+
+.grid #question {
+  font-size: 30px;
+  color: #222222;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+#btn0, #btn1, #btn2, #btn3 {
+  background-color: #222222;
+  width: 250px;
+  font-size: 20px;
+  color: #ffffff;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin: 10px 40px 10px 0px;
+  padding: 10px 10px;
+}
+
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+  cursor: pointer;
+  background-color: #222222;
+}
+
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+  outline: 0;
+}
+
+#progress {
+  color: #222222;
+  font-size: 18px;
+}
